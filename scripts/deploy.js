@@ -3,8 +3,8 @@ async function main() {
 
   console.log("Deploying contracts with the account:", deployer.address);
 
-  const HelloWorld = await ethers.getContractFactory("HelloWorld");
-  const contract = await HelloWorld.deploy();
+  const thecontract = await ethers.getContractFactory("TokenERC20Capped");
+  const contract = await thecontract.deploy('TetherX', 'USDTX', 1000000);
 
   await contract.deployed();
   // This solves the bug in Mumbai network where the contract address is not the real one
@@ -12,8 +12,6 @@ async function main() {
   const txReceipt = await ethers.provider.waitForTransaction(txHash);
   const contractAddress = txReceipt.contractAddress;
   console.log("Contract deployed to address:", contractAddress);
-
-  const saySomething = await contract.speak();
 }
 
 main()

@@ -19,21 +19,21 @@ module.exports = {
     arbitrum: {
       url: "https://arb-mainnet.g.alchemy.com/v2/PlfQTc_2Lv40t2iEVrT-b_QGJ5ZTNgW9",
       accounts: [
-        "9ba25321f4c12f10a20e350a11d27876e24954f0993bb67dc0cc610d7d0dacd5",
+        "0x724d5397cd9f7ac5625c615e6c07f79e58cab1a9a07e6875f832b8a23a4494ff",
       ],
     },
   },
   docgen: {
-    projectName: "HelloWorld",
-    projectDescription: "Hackathon project",
-    deploymentAddresses: {
-      // optional. If you want to generate widgets for deployed contracts
-      HelloWorld: [
-        {
-          chainId: 42161, // arbitrum
-          address: "0xC1EE0246C8b0B27eB65FbF3bB9f07dDC26a46507",
-        },
-      ],
-    },
+    projectName: "PaymentSplitter",
+    projectDescription: "",
+    // deploymentAddresses: {
+    //   // optional. If you want to generate widgets for deployed contracts
+    //   HelloWorld: [
+    //     {
+    //       chainId: 42161, // arbitrum
+    //       address: "0xC1EE0246C8b0B27eB65FbF3bB9f07dDC26a46507",
+    //     },
+    //   ],
+    // },
   },
 };
